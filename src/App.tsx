@@ -2,6 +2,7 @@ import {BarChart2, ChevronRight, Code2, Github, Heart, PlayCircle, Twitter, Zap}
 
 // @ts-expect-error "error"
 import '@fontsource-variable/inter';
+import {Link} from "react-router";
 
 const App = () => {
     return (
@@ -54,7 +55,7 @@ const App = () => {
                         <span className="block text-sm mt-2">( we made it fun )</span>
                     </p>
                     <div className="flex justify-center space-x-6">
-                        <button
+                        <Link to="/app"
                             className="group px-8 py-4 bg-transparent border-2 border-zinc-800 rounded-sm text-zinc-800 hover:bg-zinc-800 hover:text-white transition-all rounded-none relative overflow-hidden">
               <span className="relative z-10 flex items-center">
                 Start Testing 
@@ -62,7 +63,7 @@ const App = () => {
               </span>
                             <div
                                 className="absolute top-0 left-0 w-full h-full bg-amber-300 -translate-x-full group-hover:translate-x-0 transition-transform"></div>
-                        </button>
+                        </Link>
                         <button
                             className="px-8 py-4 bg-transparent text-zinc-600 border-2 rounded-sm border-dashed border-zinc-300 hover:border-amber-400 hover:-translate-y-1 transition-all">
                             <Github className="inline-block mr-2 h-4 w-4 -rotate-3"/>
